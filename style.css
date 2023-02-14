@@ -1,0 +1,51 @@
+body {
+    font-family: Arial;
+}
+
+.centered {
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }  
+
+.left-column {
+    display: flex;
+    flex-direction:column;
+    flex-basis: 60%;
+    flex: 1;
+}
+
+.right-column {
+    display: flex;
+    flex-direction:column;
+    flex-basis: 40%;
+    flex: 1;
+}
+
+#frame {
+    width: 500px;
+    height: 500px;
+}
+
+circle {
+    fill: purple;
+}
+
+circle:hover {
+    fill: orange;
+}
+
+circle:focus {
+    stroke: #646464;
+    stroke-width: 3px;
+}
+
+line {
+    stroke-width: 1;
+    stroke: black;
+}
