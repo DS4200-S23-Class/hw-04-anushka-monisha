@@ -16,22 +16,85 @@
     <!-- Making the Header -->
     <h1 class="centered">hw-04: Event Handling</h1>
 
+
     <div class="row">
         <div class="left-column" id="plot">
+
+            <!--create svg frame w/ proper axis + points -->
             <svg id="frame">
-                <line id="line" x1="10" y1="10" x2="10" y2="490"/>
-                <line id="line" x1="10" y1="490" x2="490" y2="490"/>
-                <circle id="point" cx="58" cy="394" r="10"/>
-                <circle id="point" cx="116" cy="298" r="10"/>
-                <circle id="point" cx="298" cy="394" r="10"/>
-                <circle id="point" cx="442" cy="58" r="10"/>
+                <line id="line" x1="0" y1="500" x2="0" y2="0"/>
+                <line id="line" x1="0" y1="500" x2="550" y2="500"/>
+                <circle id="point" cx="50" cy="400" r="10"/>
+                <circle id="point" cx="100" cy="300" r="10"/>
+                <circle id="point" cx="300" cy="400" r="10"/>
+                <circle id="point" cx="450" cy="50" r="10"/>
 
             </svg>
         </div>
+
+        <!--create right column-->
         <div class="right-column" id="information">
-            <text>text</text>
+
+            <!--paragraph place holder for selected coordinates to appear-->
+            <p id = "select-coor"></p>
+
+            <h4> Create a New Point by Selecting Coordinates </h4>
+
+            <!--form with two dropdowns controlling x and y coordinates-->
+            <form id ='frm-new-pt'>
+
+              <label>Select X-Value:</label>
+              <input list = "x" id="xVal">
+              <datalist id="x">
+                <option value="1">
+                <option value="2">
+                <option value="3">
+                <option value="4">
+                <option value="5">
+                <option value="6">
+                <option value="7">
+                <option value="8">
+                <option value="9">s
+              </datalist>
+
+              <br>
+
+              <label>Select Y-Value:</label>
+              <input list = "y" id = "yVal">
+              <datalist id="y">
+                <option value="1">
+                <option value="2">
+                <option value="3">
+                <option value="4">
+                <option value="5">
+                <option value="6">
+                <option value="7">
+                <option value="8">
+                <option value="9">s
+              </datalist>
+        
+            </form>
+
+            <!--create submit button for form-->
+            <button type="button" id="coorButton">Submit</button>
+
         </div>
     </div>
+
+
+
+<br>
+
+<!--set header for acknowledgements + bulleted list sources-->
+<h2 class = 'centered'>Acknowledgements</h2>
+<div>
+    <ul>
+      <li>https://www.w3schools.com/html/html_form_input_types.asp</li>
+      <li>https://dev.to/tqbit/how-to-create-svg-elements-with-javascript-4mmp</li>
+      <li>https://www.w3schools.com/js/js_input_examples.asp</li>
+      <li>https://www.w3schools.com/js/js_htmldom_eventlistener.asp</li>
+    </ul>
+</div>
 
 <!--call javacript file-->
 <script src = "main.js"></script>
